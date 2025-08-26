@@ -85,14 +85,13 @@ body{
   }
 
   .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap:10px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
     padding: 20px;
+    gap: 10px;
 
 }
 
@@ -113,7 +112,9 @@ body{
     border: 10px solid #BE5985;
     border-radius: 20%; 
       
-  }
+  } 
+
+}
 
  .w { 
     grid-column: 2; 
@@ -181,5 +182,3 @@ body{
     font-size: 25px;    
 }
 }
-
-
