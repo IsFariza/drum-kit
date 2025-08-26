@@ -74,3 +74,110 @@ body{
     box-shadow: 0 3px 4px 0 #DBEDF3;
     opacity: 0.5;
 }
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;     
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+
+}
+
+  .drum {
+    display: flex;
+    justify-content: right;
+    align-items: top;
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+
+    font-size: 0;   
+    font-family: 'Gill Sans MT', sans-serif;
+    color: #FFB8E0;
+    -webkit-text-stroke: 1px #BE5985;
+    
+    border: 10px solid #BE5985;
+    border-radius: 20%; 
+      
+  }
+
+ .w { 
+    grid-column: 2; 
+    grid-row: 1; 
+}
+
+.w::after{
+        content: "Kick Bass";
+        font-size: 25px;
+    }
+  
+  .a { 
+    grid-column: 4; 
+    grid-row: 1; 
+}
+
+.a::after{
+    content: "Stand Bass";
+    font-size: 25px;
+}
+ 
+  .s { 
+    grid-column: 1; 
+    grid-row: 2; 
+}
+
+.s::after{
+    content: "Tom 1";
+    font-size: 25px;
+}
+  .d { 
+    grid-column: 3; 
+    grid-row: 2; 
+}
+
+.d::after{
+    content: "Tom 2";
+    font-size: 25px;
+}
+  .f { 
+    grid-column: 5; 
+    grid-row: 2; 
+}
+
+.f::after{
+    content: "Tom 3";
+    font-size: 25px;
+}
+
+  .g { 
+    grid-column: 2; 
+    grid-row: 3; 
+}
+.g::after{
+    content: "Ride Cymbal";
+    font-size: 25px;
+}
+  .h { 
+    grid-column: 4; 
+    grid-row: 3; 
+}
+
+.h::after{
+    content: "Crash Cymbal";
+    font-size: 25px;    
+}
+}
