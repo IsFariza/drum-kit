@@ -76,7 +76,7 @@ body{
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;     
     margin-top: 20px;
@@ -181,4 +181,5 @@ body{
     font-size: 25px;    
 }
 }
+
 
